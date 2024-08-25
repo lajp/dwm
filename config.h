@@ -75,10 +75,8 @@ static const char *dmenucmd[] = {
     "-nf",       col_gray3, "-sb",    col_cyan, "-sf",     col_gray4, NULL};
 static const char *dmenupasscmd[] = {"/usr/bin/env", "passmenu", NULL};
 static const char *termcmd[] = {"alacritty", NULL};
-// static const char *brightnessupcmd[] = {"blmgr", "+5%", NULL};
-static const char *brightnessupcmd[] = {"light", "-A", "10", NULL};
-// static const char *brightnessdowncmd[] = {"blmgr", "-5%", NULL};
-static const char *brightnessdowncmd[] = {"light", "-U", "10", NULL};
+static const char *brightnessupcmd[] = {"blmgr", "+5%", NULL};
+static const char *brightnessdowncmd[] = {"blmgr", "-5%", NULL};
 static const char *raisevolumecmd[] = {"pactl", "set-sink-volume",
                                        "@DEFAULT_SINK@", "+5%", NULL};
 static const char *lowervolumecmd[] = {"pactl", "set-sink-volume",
